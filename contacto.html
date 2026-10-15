@@ -47,15 +47,18 @@ swap_horiz
         <label for="tipo">Tipo de solicitud:</label>
         <!--despegable-->
         <select name="tipo" id="tipo">
-            <option value="soporte">Soporte</option>
-            <option value="ventas"> Ventas</option>
-            <option value="cotización">Cotización</option>
+            <option value="soporte">Concretar cita</option>
+            <option value="ventas"> Hacer seleccion</option>
+            <option value="cotización">Información</option>
             </select>
             <br><br>
             <!--validar correo electrónico-->
         <label for="correo">Correo Electrónico:</label>
         <input type="email" id="email" name="email" required>
         <br><br>
+        <label for="telefono">Numero de teléfono</label>
+        <br><br>
+        <input type="tel" id="telefono" name="telefono">
         <!--para que te lleve a buscar archivo-file-->
         <label for="archivo">Subir un archivo:</label>
         <input type="file">
