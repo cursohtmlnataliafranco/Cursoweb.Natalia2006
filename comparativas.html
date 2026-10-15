@@ -32,22 +32,17 @@ swap_horiz
     </header>
     <main>
         <h2>Comparativas</h2>
+        <form action="https://formsubmit.co/nataliafoto46@gmail.com" method="POST" enctype="multipart/form-data"></form>
         <div class="card-container">
-            <div class="card">
-                <form action="https://formsubmit.co/nataliafoto46@gmail.com" method="POST" enctype="multipart/form-data"></form>
+            <div class="card"> 
                 <h2>Producto 1</h2>
                 <p><strong>Descripción:</strong>  Descripción producto 1</p>
                 <img src="img/cascos.jpg" alt="imagen">
-                <label for="comentario">Editar:</label>
-        <input type="comentario" id="email" name="email">
-                <ul>
-                    <li>Características 1</li>
-                    <li>Características 2</li>
-                    <li>Características 3</li>
-                </ul>
-            <select name="tipo" id="tipo">
-            <option value="soporte">Si</option>
-            <option value="ventas">No</option>
+                <label for="foto">¿Te gusta esta foto?</label>
+            <select name="respuesta_foto_1" id="foto-1">
+            <option value="" disabled selected>Selecciona...</option>
+            <option value="si">Si</option>
+            <option value="no">No</option>
             </select>
             </div>
              <div class="card">
@@ -114,8 +109,9 @@ swap_horiz
                 <button>Comprar</button>
             </div>
         </div>
-        <label for="boton"></label>
-        <input type="submit" id="boton" name="boton">
+         <div class="contenedor-boton">
+        <input type="submit" id="boton_enviar" name="enviar" value="Enviar respuestas">
+        </div>
     </form>
     </main>
 
