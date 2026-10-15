@@ -1,0 +1,242 @@
+body img{
+    width: 400px;
+    height: 180px;
+    background-color: black;
+}
+body{    
+    /*background-color: rgb(0, 0, 0);*/
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f3eaea;
+    margin: 0;
+}
+header{
+    background-color: #2c3e50;
+    color: aliceblue;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header h1{
+    margin: 0;
+    font-size: 2.5em;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a{
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+nav ul li a:hover{
+    color: rgb(247, 241, 52);
+}
+main{
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+main h2{
+    color: #9ec4e9;
+    font-size: 2em;
+    margin-top: 0;
+}
+main p{
+    font-size: 1.2em;
+}
+footer{
+    background-color: #2c3e50;
+    color: aliceblue;
+    text-align: center;
+    padding: 4px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/*para poder bajar la página y que no corte el contenido*/
+.reviews{
+    height: 100%;
+    overflow: hidden;
+}
+table{
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+/* esto es para poner lineas separando la tabla y alinear texto*/
+th,td{
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th{
+    background-color: #2c3e50;
+    color: white;
+}
+/*esto es para destacar las lineas cuando pasas el cursor*/
+tr:hover{
+    background-color: #353634;
+}
+.reviews-link{
+    padding: 8px 12px;
+    background-color: #2c3e50;
+    color: #ddd;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/*para que el boton cambie de color al poner el cursor encima*/
+.reviews-link:hover{
+    background-color: #70879e;
+}
+.product-img{
+    width: 200px;
+}
+/* tutoriales.html*/
+.video-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ddd;
+    box-shadow: 0 4px 8px black;
+    border-radius: 10px;
+    text-align: center;
+    color: #020a11;
+}
+.video-container video{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 7);
+}
+form{
+    max-width:400px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input, select,textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"]{
+    background-color: rgb(40, 66, 2);
+    color: white;
+    padding: 10px 15 px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: rgb(123, 146, 88);
+    color: white;
+    padding: 10px 15 px;
+    cursor: pointer;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;/*separacion entre las columnas*/
+}
+.columna{
+    flex: 1;/*hacer que cada columna ocupe el mismo espacio*/
+}
+iframe{
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+.pdf{
+    width: 100%;
+    height: 800px;
+    border: 0;
+}
+.boton-flotante{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px black;
+    z-index: 100;
+}
+.boton-flotante img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.card{
+    background-color: #2c3e50;
+    border: 1px solid white;
+    box-shadow: 1px 4px 8px whitesmoke;
+    border-radius: 8px;
+    padding: 20px;
+}
+.card h2{
+    margin: 0 0 10px;
+    color: #51a3f6;
+}
+.card p{
+    color: darkgrey;
+}
+.card ul{
+    list-style-type: none;
+    padding: 0;
+    color: #9ec4e9;
+}
+button{
+    background-color: rgb(173, 189, 146);
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button:hover{
+    background-color: rgb(254, 254, 254);
+    color: rgb(51, 91, 51);
+}
+.btn-descarga{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #51a3f6;
+    color: #ddd;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    
+}
+.btn-descarga:hover{
+    background-color: violet;
+}
